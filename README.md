@@ -1,12 +1,12 @@
 MailChimp integration plugin
 
-This plugin implements the MailChimp subscription form functionality for the [OctoberCMS](http://octobercms.com).
+This plugin implements the MailChimp subscription form functionality for the [Winter CMS](https://wintercms.com).
 
 ## Configuring
 
 In order to use the plugin you need to get the API key from your [MailChimp account](http://admin.mailchimp.com/account/api/).
 
-1. In the OctoberCMS back-end go to the System / Settings page and click the MailChimp link. 
+1. In the Winter CMS back-end go to the System / Settings page and click the MailChimp link. 
 2. Paste the API key in the **MailChimp API key** field.
 
 ## Creating the Signup form
@@ -28,7 +28,7 @@ If the default partial is not suitable for your website, replace the component t
         <input type="submit" class="btn btn-default" value="Subscribe"/>
     </form>
 
-The example uses the standard partial mailSignup::result for displaying the subscription confirmation message. If you don't like the standard message you can create your own partial in your theme and specify its name in the `data-request-update` attribute. The default partial is located in `plugins/rainlab/mailchimp/components/signup/result.htm`.
+The example uses the standard partial mailSignup::result for displaying the subscription confirmation message. If you don't like the standard message you can create your own partial in your theme and specify its name in the `data-request-update` attribute. The default partial is located in `plugins/winter/mailchimp/components/signup/result.htm`.
 
 More fields can be included in the subscription request:
     

@@ -1,4 +1,4 @@
-<?php namespace RainLab\MailChimp;
+<?php namespace Winter\MailChimp;
 
 use System\Classes\PluginBase;
 
@@ -11,14 +11,14 @@ class Plugin extends PluginBase
             'description' => 'Provides MailChimp integration services.',
             'author'      => 'Alexey Bobkov, Samuel Georges',
             'icon'        => 'icon-envelope',
-            'homepage'    => 'https://github.com/rainlab/mailchimp-plugin'
+            'homepage'    => 'https://github.com/wintercms/wn-mailchimp-plugin'
         ];
     }
 
     public function registerComponents()
     {
         return [
-            'RainLab\MailChimp\Components\Signup' => 'mailSignup'
+            'Winter\MailChimp\Components\Signup' => 'mailSignup'
         ];
     }
 
@@ -30,7 +30,7 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'rainlab.mailchimp.configure' => [
+            'winter.mailchimp.configure' => [
                 'tab'   => 'MailChimp',
                 'label' => 'Configure MailChimp API access.',
             ],
@@ -44,9 +44,9 @@ class Plugin extends PluginBase
                 'label'       => 'MailChimp',
                 'icon'        => 'icon-envelope',
                 'description' => 'Configure MailChimp API access.',
-                'class'       => 'RainLab\MailChimp\Models\Settings',
+                'class'       => 'Winter\MailChimp\Models\Settings',
                 'order'       => 600,
-                'permissions' => ['rainlab.mailchimp.configure']
+                'permissions' => ['winter.mailchimp.configure']
             ]
         ];
     }
