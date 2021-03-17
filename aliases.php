@@ -8,9 +8,9 @@ use Winter\Storm\Support\ClassLoader;
  */
 $aliases = [
     // Regular aliases
-    Winter\MailChimp\Plugin::class              => 'RainLab\MailChimp\Plugin',
-    Winter\MailChimp\Components\Signup::class   => 'RainLab\MailChimp\Components\Signup',
-    Winter\MailChimp\Models\Settings::class     => 'RainLab\MailChimp\Models\Settings',
+    Winter\MailChimp\Plugin::class              => RainLab\MailChimp\Plugin::class,
+    Winter\MailChimp\Components\Signup::class   => RainLab\MailChimp\Components\Signup::class,
+    Winter\MailChimp\Models\Settings::class     => RainLab\MailChimp\Models\Settings::class,
 ];
 
 app(ClassLoader::class)->addAliases($aliases);
