@@ -22,5 +22,8 @@
         "composer/installers": "~1.0",
         "drewm/mailchimp-api": "^2.5"
     },
+    "extra": {
+        "installer-name": "mailchimp"
+    },
     "minimum-stability": "dev"
 }
