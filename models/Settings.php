@@ -1,6 +1,6 @@
-<?php namespace RainLab\MailChimp\Models;
+<?php namespace Winter\MailChimp\Models;
 
-use October\Rain\Database\Model;
+use Winter\Storm\Database\Model;
 
 /**
  * Twitter settings model
@@ -11,11 +11,11 @@ use October\Rain\Database\Model;
  */
 class Settings extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
+    use \Winter\Storm\Database\Traits\Validation;
 
     public $implement = ['System.Behaviors.SettingsModel'];
 
-    public $settingsCode = 'rainlab_mailchimp_settings';
+    public $settingsCode = 'winter_mailchimp_settings';
 
     public $settingsFields = 'fields.yaml';
 
