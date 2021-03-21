@@ -1,5 +1,5 @@
 {
-    "name": "winter/mailchimp-plugin",
+    "name": "winter/wn-mailchimp-plugin",
     "type": "winter-plugin",
     "description": "Mailchimp plugin for Winter CMS",
     "homepage": "https://github.com/wintercms/wn-mailchimp-plugin",
@@ -9,21 +9,30 @@
         {
             "name": "Alexey Bobkov",
             "email": "aleksey.bobkov@gmail.com",
-            "role": "Co-founder"
+            "role": "Original Author"
         },
         {
             "name": "Samuel Georges",
             "email": "daftspunky@gmail.com",
-            "role": "Co-founder"
+            "role": "Original Author"
+        },
+        {
+            "name": "Winter CMS Maintainers",
+            "homepage": "https://wintercms.com",
+            "role": "Maintainer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/wintercms/wn-mailchimp-plugin/issues",
+        "discord": "https://discord.gg/D5MFSPH6Ux",
+        "source": "https://github.com/wintercms/wn-mailchimp-plugin"
+    },
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.2",
         "composer/installers": "~1.0",
         "drewm/mailchimp-api": "^2.5"
     },
     "extra": {
         "installer-name": "mailchimp"
-    },
-    "minimum-stability": "dev"
+    }
 }

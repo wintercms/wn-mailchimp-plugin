@@ -9,7 +9,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'MailChimp',
             'description' => 'Provides MailChimp integration services.',
-            'author'      => 'Alexey Bobkov, Samuel Georges',
+            'author'      => 'Winter CMS',
             'icon'        => 'icon-envelope',
             'homepage'    => 'https://github.com/wintercms/wn-mailchimp-plugin',
             'replaces'    => 'RainLab.MailChimp'
