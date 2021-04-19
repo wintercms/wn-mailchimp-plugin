@@ -12,7 +12,7 @@ class Plugin extends PluginBase
             'author'      => 'Winter CMS',
             'icon'        => 'icon-envelope',
             'homepage'    => 'https://github.com/wintercms/wn-mailchimp-plugin',
-            'replaces'    => 'RainLab.MailChimp'
+            'replaces'    => ['RainLab.MailChimp' => '<= 1.0.4'],
         ];
     }
 
