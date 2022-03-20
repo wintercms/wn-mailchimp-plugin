@@ -76,5 +76,10 @@ class Signup extends ComponentBase
         if (!$MailChimp->success()) {
             $this->page['error'] = $MailChimp->getLastError();
         }
+
+        $response = $MailChimp->getLastResponse();
+        return [
+            'status' => $response['headers']['http_code'],
+        ];
     }
 }
